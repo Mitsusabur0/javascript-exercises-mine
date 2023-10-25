@@ -2,24 +2,31 @@
 // 	return a + b;
 // };
 const add = (a, b) => a + b;
-// console.log(add(2,2));
-
 
 const subtract = (a, b) => a - b;
 
 const sum = (numbersList) => numbersList.reduce((total, current) => total + current, 0);
 
-const multiply = function() {
+const multiply = (numbersList) => numbersList.reduce((total, number) => total * number, 1);
 
+const power = (a, b) => a ** b;
+
+
+
+const factorial = function(a) {
+	const nums = [];
+  for (let i = a; i > 0; i--) {
+    nums.push(i);
+  }
+  return nums.reduce((total, number) => total * number, 1);
 };
 
-const power = function() {
-	
-};
 
-const factorial = function() {
-	
-};
+
+
+
+
+
 
 // Do not edit below this line
 module.exports = {
